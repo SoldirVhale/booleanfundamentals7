@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    height: 100vh;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+}
+
+.container .city {
+    scroll-snap-align: start;
+}
+
+.city {
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.tokyo {
+    background-image: url(img/japan-4141578_1280.jpg); 
+}
+
+.losangeles {
+    background-image: url(img/los\ angeles.jpg);
+}
+
+.paris {
+    background-image: url(img/notre-dame-4131864_1280.jpg);
+}
+
+.text {
+    font-size: 9vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+    font-family: "SUSE", sans-serif;
+}
+
+.overlay {
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+}
